@@ -1,0 +1,30 @@
+<div class="vendedor-detail-container" *ngIf="vendedor">
+  <h2>{{ vendedor.nombre | uppercase }} Details</h2>
+  <div class="vendedor-info">
+    <span class="vendedor-label">ID:</span> {{ vendedor.id }}
+  </div>
+  <div class="vendedor-info">
+    <label for="vendedor-nombre" class="vendedor-label">Nombre:</label>
+    <input id="vendedor-nombre" [(ngModel)]="vendedor.nombre" placeholder="nombre" class="vendedor-input"/>
+  </div>
+  <div class="vendedor-info">
+    <h3>Clientes</h3>
+    <ul>
+      <li *ngFor="let cliente of vendedor.customers">
+        <div class="cliente-info">
+          <span class="cliente-nombre">{{ cliente.fullName }}</span>
+          <div class="cliente-formulas">
+            <h4>Fórmulas</h4>
+            <ul>
+              <li *ngFor="let formula of cliente.formulas">{{ formula }}</li>
+            </ul>
+          </div>
+        </div>
+      </li>
+    </ul>
+  </div>
+  <div class="vendedor-actions">
+    <button (click)="goBack()" class="vendedor-button">Go Back</button>
+    <button (click)="save()" class="vendedor-button vendedor-button-save">Save</button>
+  </div>
+</div>

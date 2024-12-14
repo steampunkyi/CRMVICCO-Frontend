@@ -1,0 +1,19 @@
+<div class="container">
+  <h2 class="text-center">Lista de Reportes de Fórmulas</h2>
+  <div class="row">
+    <table class="table table-striped table-bordered">
+      <thead>
+        <tr>
+          <th>Nombre</th>
+          <th>Fecha</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let formula of formulas">
+          <td><a [routerLink]="['/report', formula.id]">{{ formula.nombre }}</a></td>
+          <td>{{ formula.fechaCreacion | date}}</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</div>

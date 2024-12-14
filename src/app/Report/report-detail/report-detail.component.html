@@ -1,0 +1,16 @@
+<div class="container">
+  <h2 class="text-center">Reporte de Fórmula</h2>
+  <div *ngIf="formula">
+    <p><strong>Nombre:</strong> {{ formula.nombre }}</p>
+    <p><strong>Fecha:</strong> {{ formula.fechaCreacion | date }}</p>
+    <p><strong>Cliente:</strong> {{ formula.nombreCustomer }}</p>
+    <p><strong>Vendedor:</strong> {{ formula.nombreVendedor }}</p>
+    <h3>Ingredientes</h3>
+    <ul>
+      <li *ngFor="let ingrediente of formula.ingredientes">
+        {{ ingrediente.nombre }} -{{ ingrediente.proveedor }}
+      </li>
+    </ul>
+  </div>
+  <button (click)="goBack()" class="btn btn-primary">Regresar</button>
+</div>

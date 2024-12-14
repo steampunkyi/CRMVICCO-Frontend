@@ -1,0 +1,23 @@
+<!-- src/app/Customer/customer-details/customer-details.component.html -->
+
+<div class="container mt-5">
+  <div class="row justify-content-center">
+    <div class="col-md-6">
+      <div class="card">
+        <div class="card-header">
+          <h2>Detalles del Cliente</h2>
+        </div>
+        <div class="card-body">
+          <p><strong>Id:</strong> {{ customer.id }}</p>
+          <p><strong>Nombre:</strong> {{ customer.firstName }}</p>
+          <p><strong>Apellido:</strong> {{ customer.lastName }}</p>
+          <p><strong>Email:</strong> {{ customer.email }}</p>
+          <p><strong>Teléfono:</strong> {{ customer.mobileNumber }}</p>
+        </div>
+        <div class="card-footer">
+          <button (click)="goBack()" class="btn btn-secondary">Regresar</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

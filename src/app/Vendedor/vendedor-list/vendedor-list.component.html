@@ -1,0 +1,9 @@
+<div class="vendedor-list-container">
+  <h2>Vendedores</h2>
+  <ul class="vendedor-list">
+    <li *ngFor="let vendedor of vendedores" class="vendedor-item">
+      {{ vendedor.nombre }}
+      <button [routerLink]="['/vendedores', vendedor.id]">Ver Detalles</button>
+    </li>
+  </ul>
+</div>
