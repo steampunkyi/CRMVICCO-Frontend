@@ -1,0 +1,15 @@
+<div class="update-proveedor">
+  <h2>Update Proveedor</h2>
+  <form (ngSubmit)="onSubmit()">
+    <div>
+      <label for="nombre">Nombre:</label>
+      <input type="text" id="nombre" [(ngModel)]="proveedor.nombre" name="nombre" required>
+    </div>
+    <div>
+      <label for="pais">País:</label>
+      <input type="text" id="pais" [(ngModel)]="proveedor.pais" name="pais" required>
+    </div>
+    <button type="submit">Update</button>
+  </form>
+  <button (click)="goToProveedorList()">Cancel</button>
+</div>

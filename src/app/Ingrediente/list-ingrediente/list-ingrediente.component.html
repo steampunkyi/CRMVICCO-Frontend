@@ -1,0 +1,25 @@
+<!-- src/app/Ingrediente/list-ingrediente/list-ingrediente.component.html -->
+<table class="table table-striped">
+  <thead>
+    <tr>
+      <th>ID</th>
+      <th>Nombre</th>
+      <th>Precio por Kg</th>
+      <th>Proveedor ID</th>
+      <th>Acciones</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let ingrediente of ingredientes">
+      <td>{{ ingrediente.id }}</td>
+      <td>{{ ingrediente.nombre }}</td>
+      <td>{{ ingrediente.precioPorKg }}</td>
+      <td>{{ ingrediente.proveedor }}</td>
+      <td>
+        <button (click)="updateIngrediente(ingrediente.id)" class="btn btn-info">Editar</button>
+        <button (click)="deleteIngrediente(ingrediente.id)" class="btn btn-danger">Eliminar</button>
+        <button (click)="viewIngrediente(ingrediente.id)" class="btn btn-primary">Ver</button>
+      </td>
+    </tr>
+  </tbody>
+</table>

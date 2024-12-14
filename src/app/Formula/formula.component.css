@@ -1,0 +1,20 @@
+/* src/app/formula/formula.component.css */
+.navbar {
+  margin-bottom: 20px;
+}
+
+h1 {
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.container {
+  padding: 20px;
+}
+
+.footer {
+  margin-top: 20px;
+  padding: 10px 0;
+  background-color: #f8f9fa;
+  text-align: center;
+}

@@ -1,0 +1,21 @@
+<!-- src/app/Proveedor/proveedor.component.html -->
+<nav class="navbar navbar-expand-sm bg-primary navbar-dark">
+  <ul class="navbar-nav">
+    <li class="nav-item">
+      <a class="nav-link" routerLink="./" routerLinkActive="active">Lista de Proveedores</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" routerLink="create-proveedor" routerLinkActive="active">Agregar Proveedor</a>
+    </li>
+  </ul>
+</nav>
+
+<h1 class="text-center">{{ title }}</h1>
+<div class="container">
+  <router-outlet></router-outlet>
+</div>
+<footer class="footer">
+  <div class="container">
+    <span>Todos los derechos registrados</span>
+  </div>
+</footer>

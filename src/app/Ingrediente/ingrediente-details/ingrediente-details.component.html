@@ -1,0 +1,9 @@
+<div class="container">
+  <h2>Ingredient Details</h2>
+  <div *ngIf="ingrediente">
+    <p><strong>ID:</strong> {{ ingrediente.id }}</p>
+    <p><strong>Name:</strong> {{ ingrediente.nombre }}</p>
+    <p><strong>Price per Kg:</strong> {{ ingrediente.precioPorKg }}</p>
+    <p><strong>Supplier ID:</strong> {{ ingrediente.proveedor }}</p>
+  </div>
+</div>

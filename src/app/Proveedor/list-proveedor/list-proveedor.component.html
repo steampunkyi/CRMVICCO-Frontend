@@ -1,0 +1,23 @@
+<!-- src/app/Proveedor/list-proveedor/list-proveedor.component.html -->
+<table class="table table-striped">
+  <thead>
+    <tr>
+      <th>ID</th>
+      <th>Nombre</th>
+      <th>País</th>
+      <th>Acciones</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let proveedor of proveedores">
+      <td>{{ proveedor.id }}</td>
+      <td>{{ proveedor.nombre }}</td>
+      <td>{{ proveedor.pais }}</td>
+      <td>
+        <button (click)="updateProveedor(proveedor.id)" class="btn btn-info">Editar</button>
+        <button (click)="deleteProveedor(proveedor.id)" class="btn btn-danger">Eliminar</button>
+        <button (click)="viewProveedor(proveedor.id)" class="btn btn-primary">Ver</button>
+      </td>
+    </tr>
+  </tbody>
+</table>

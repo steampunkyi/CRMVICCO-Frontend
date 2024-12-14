@@ -1,0 +1,44 @@
+.update-proveedor {
+  border: 1px solid #ccc;
+  padding: 16px;
+  border-radius: 8px;
+  max-width: 400px;
+  margin: 0 auto;
+}
+
+.update-proveedor h2 {
+  text-align: center;
+}
+
+.update-proveedor form {
+  display: flex;
+  flex-direction: column;
+}
+
+.update-proveedor div {
+  margin-bottom: 8px;
+}
+
+.update-proveedor label {
+  font-weight: bold;
+}
+
+.update-proveedor input {
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.update-proveedor button {
+  margin-top: 16px;
+  padding: 8px 16px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.update-proveedor button:hover {
+  background-color: #0056b3;
+}

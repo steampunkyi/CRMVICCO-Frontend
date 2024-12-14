@@ -1,0 +1,18 @@
+<div class="container">
+  <h2>Update Ingrediente</h2>
+  <form (ngSubmit)="onSubmit()">
+    <div class="form-group">
+      <label for="nombre">Nombre</label>
+      <input type="text" id="nombre" class="form-control" [(ngModel)]="ingrediente.nombre" name="nombre" required>
+    </div>
+    <div class="form-group">
+      <label for="precioPorKg">Precio por Kg</label>
+      <input type="number" id="precioPorKg" class="form-control" [(ngModel)]="ingrediente.precioPorKg" name="precioPorKg" required>
+    </div>
+    <div class="form-group">
+      <label for="proveedorId">Proveedor ID</label>
+      <input type="number" id="proveedorId" class="form-control" [(ngModel)]="ingrediente.proveedor" name="proveedorId" required>
+    </div>
+    <button type="submit" class="btn btn-primary">Update</button>
+  </form>
+</div>

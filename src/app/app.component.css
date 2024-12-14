@@ -1,0 +1,70 @@
+/* src/app/app.component.css */
+
+/* Navbar */
+.navbar {
+  margin-bottom: 20px;
+}
+
+/* Main container */
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* Footer */
+.footer {
+  padding: 10px 0;
+  background-color: #f8f9fa;
+  border-top: 1px solid #e7e7e7;
+}
+
+.footer .container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Text center */
+.text-center {
+  text-align: center;
+}
+
+/* Margin top */
+.mt-4 {
+  margin-top: 1.5rem;
+}
+
+/* Navbar links */
+.nav-link {
+  color: #fff !important;
+}
+
+.nav-link.active {
+  font-weight: bold;
+  text-decoration: underline;
+}
+
+/* Navbar brand */
+.navbar-brand {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+/* Navbar toggler */
+.navbar-toggler {
+  border-color: rgba(255, 255, 255, 0.1);
+}
+
+.navbar-toggler-icon {
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba%28255, 255, 255, 0.5%29' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
+}
+
+/* Formulas link */
+.nav-link.formulas {
+  color: #28a745 !important;
+}
+
+.nav-link.formulas.active {
+  font-weight: bold;
+  text-decoration: underline;
+}

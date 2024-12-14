@@ -1,0 +1,5 @@
+/* src/app/main-content/main-content.component.css */
+.main-content {
+  flex-grow: 1;
+  padding: 10px;
+}
